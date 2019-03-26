@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/constraintLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<ScrollView
+    android:id="@+id/scrollView2"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/activity_main_view_updates_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorUpdatesBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_ad_title" />
+
+        <View
+            android:id="@+id/activity_main_line_1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorLines"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_button_open"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_button_uninstall"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_button_uninstall" />
+
+        <ImageView
+            android:id="@+id/activity_main_image_view_rating"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:layout_constraintEnd_toStartOf="@+id/activity_main_image_view_travel"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_image_view_downloads"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_image_view_downloads"
+            app:srcCompat="@drawable/ic_rating"
+            android:contentDescription="@string/activity_main_image_view_rating" />
+
+
+        <TextView
+            android:id="@+id/activity_main_ad_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/activity_main_ad_title"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_line_2" />
+
+        <ImageView
+            android:id="@+id/activiti_main_image_view_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/background"
+            android:contentDescription="@string/activiti_main_image_view_bg" />
+
+        <TextView
+            android:id="@+id/activity_main_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/activity_main_app_name"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/activity_main_inc_name"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_icon_app"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_icon_app"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <Button
+            android:id="@+id/activity_main_button_uninstall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_button_uninstall"
+            android:text="@string/activity_main_button_text_uninstall"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toStartOf="@+id/activity_main_button_open"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_icon_app"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_icon_app" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_text_travel"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_image_view_travel"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_image_view_travel"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_text_view_rate_num" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_downloads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:text="@string/activity_main_text_downloads"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_image_view_downloads"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_image_view_downloads"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_image_view_downloads" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_rate_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_text_rating"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/activity_main_icon_ratings_small"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_image_view_rating"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_text_view_downloads" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_similars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_text_similars"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_image_view_similars"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_image_view_similars"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_text_view_travel" />
+
+
+        <View
+            android:id="@+id/activity_main_line_2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorLines"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_button_open"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_button_uninstall"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_text_view_rate_num" />
+
+        <ImageView
+            android:id="@+id/activity_main_image_view_similars"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_button_open"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_image_view_travel"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_image_view_travel"
+            app:srcCompat="@drawable/ic_similar"
+            android:contentDescription="@string/activity_main_image_view_similars" />
+
+
+
+        <ImageView
+            android:id="@+id/activity_main_icon_app"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activiti_main_image_view_bg"
+            app:srcCompat="@drawable/ic_maps"
+            android:contentDescription="@string/activity_main_icon_app" />
+
+        <TextView
+            android:id="@+id/activity_main_inc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_inc_name"
+            app:layout_constraintBottom_toTopOf="@+id/activity_main_icon_age"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_app_name"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_app_name" />
+
+        <ImageView
+            android:id="@+id/activity_main_image_view_downloads"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/activity_main_image_view_rating"
+
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_button_uninstall"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_line_1"
+            app:srcCompat="@drawable/ic_billion"
+            android:contentDescription="@string/activity_main_image_view_downloads" />
+
+        <ImageView
+            android:id="@+id/activity_main_image_view_travel"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:layout_constraintEnd_toStartOf="@+id/activity_main_image_view_similars"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_image_view_rating"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_image_view_rating"
+            app:srcCompat="@drawable/ic_travel"
+            android:contentDescription="@string/activity_main_image_view_travel" />
+
+        <ImageView
+            android:id="@+id/activity_main_icon_age"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_main_icon_app"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_inc_name"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_inc_name"
+            app:srcCompat="@drawable/ic_person"
+            android:contentDescription="@string/activity_main_icon_age" />
+
+        <Button
+            android:id="@+id/activity_main_button_open"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_button_open"
+            android:text="@string/activity_main_button_open"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_button_uninstall"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_button_uninstall" />
+
+        <ImageView
+            android:id="@+id/activity_main_icon_watch"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_view_updates_bg"
+            app:srcCompat="@drawable/icons8_watch_96"
+            android:contentDescription="@string/activity_main_icon_watch" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/activity_main_text_view_read_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_icon_watch" />
+
+        <HorizontalScrollView
+
+            android:id="@+id/activity_main_horisontal_scroll_view"
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_text_view_read_more">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/activity_main_image_scroll_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/scroll_item_a"
+                    android:contentDescription="@string/activity_main_image_scroll_a" />
+
+                <ImageView
+                    android:id="@+id/activity_main_image_scroll_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/scroll_item_b"
+                    android:contentDescription="@string/activity_main_image_scroll_b" />
+
+                <ImageView
+                    android:id="@+id/activity_main_image_scroll_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/scroll_item_c"
+                    android:contentDescription="@string/activity_main_image_scroll_c" />
+
+                <ImageView
+                    android:id="@+id/activity_main_image_scroll_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/scroll_item_d"
+                    android:contentDescription="@string/activity_main_image_scroll_d" />
+
+                <ImageView
+                    android:id="@+id/activity_main_image_scroll_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/scroll_item_e"
+                    android:contentDescription="@string/activity_main_image_scroll_e" />
+
+                <ImageView
+                    android:id="@+id/activity_main_image_scroll_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/scroll_item_f"
+                    android:contentDescription="@string/activity_main_image_scroll_f" />
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/activity_main_icon_user"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_horisontal_scroll_view"
+            app:srcCompat="@drawable/ic_person"
+            android:contentDescription="@string/activity_main_icon_user" />
+
+        <TextView
+            android:id="@+id/activity_main_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/activity_main_user_name"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_icon_user" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_main_text_rate"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_user_name" />
+
+        <ImageView
+            android:id="@+id/activity_main_icon_star_tst"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_text_view_rate"
+            app:srcCompat="@drawable/icons8_star_500"
+            android:contentDescription="@string/activity_main_icon_star_tst" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/activity_main_text_note"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_icon_star_tst" />
+
+        <View
+            android:id="@+id/activity_main_line_3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorLines"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_line_2"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_line_2"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_text_view_note" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_main_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/activity_main_text_view_main_rating"
+            android:textSize="64sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/activity_main_rating_details_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_line_3" />
+
+        <View
+            android:id="@+id/activity_main_rating_details_view"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_main_text_view_main_rating"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_text_view_main_rating"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_text_view_main_rating" />
+
+        <ImageView
+            android:id="@+id/activity_main_icon_ratings_small"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_main_text_view_rate_num"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_image_view_rating"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_text_view_rate_num"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_text_view_rate_num"
+            app:srcCompat="@drawable/ic_person"
+            android:contentDescription="@string/activity_main_icon_ratings_small" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorAccentDark"
+            android:text="@string/activity_main_text_view_news_title"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_line_2"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_view_updates_bg" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_news_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/activity_main_text_view_news_text"
+            android:textColor="@color/colorAccentDark"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_line_2"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_text_view_news_title"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_text_view_news_title" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_downloads_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/activity_main_text_view_downloads_num"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_main_image_view_downloads"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_image_view_downloads"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_image_view_downloads"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_image_view_downloads" />
+
+        <TextView
+            android:id="@+id/activity_main_text_view_rating_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_text_view_main_rating"
+            android:textSize="24sp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_main_image_view_rating"
+            app:layout_constraintEnd_toEndOf="@+id/activity_main_image_view_rating"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_image_view_rating"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_image_view_rating" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

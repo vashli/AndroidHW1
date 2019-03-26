@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PlayStoreProduct</string>
+    <string name="activity_main_text_similars">Similar</string>
+    <string name="activity_main_text_travel">Travel and Local</string>
+    <string name="activity_main_text_downloads">Downloads</string>
+    <string name="activity_main_button_text_uninstall">Uninstall</string>
+    <string name="activity_main_text_rating">5,200</string>
+    <string name="activity_main_image_view_similars">activity_main_image_view_similars</string>
+    <string name="activity_main_icon_app">activity_main_icon_app</string>
+    <string name="activity_main_inc_name">Google Inc.</string>
+    <string name="activity_main_image_view_downloads">activity_main_image_view_downloads</string>
+    <string name="activity_main_image_view_travel">activity_main_image_view_travel</string>
+    <string name="activity_main_icon_age">activity_main_icon_age</string>
+    <string name="activity_main_button_open">Open</string>
+    <string name="activity_main_icon_watch">activity_main_icon_watch</string>
+    <string name="activity_main_app_name">Maps</string>
+    <string name="activiti_main_image_view_bg">activiti_main_image_view_bg</string>
+    <string name="activity_main_text_view_read_more">READ MORE</string>
+    <string name="activity_main_image_scroll_a">activity_main_image_scroll_a</string>
+    <string name="activity_main_image_scroll_b">activity_main_image_scroll_b</string>
+    <string name="activity_main_image_scroll_c">activity_main_image_scroll_c</string>
+    <string name="activity_main_image_scroll_d">activity_main_image_scroll_d</string>
+    <string name="activity_main_image_scroll_e">activity_main_image_scroll_e</string>
+    <string name="activity_main_image_scroll_f">activity_main_image_scroll_f</string>
+    <string name="activity_main_icon_user">activity_main_icon_user</string>
+    <string name="activity_main_user_name">Mariam Berishvili</string>
+    <string name="activity_main_text_rate">Rate this app</string>
+    <string name="activity_main_icon_star_tst">activity_main_icon_star_tst</string>
+    <string name="activity_main_text_note">Reviews are linked to your account and are public</string>
+    <string name="activity_main_icon_ratings_small">activity_main_icon_ratings_small</string>
+    <string name="activity_main_text_view_main_rating">4.2</string>
+    <string name="activity_main_image_view_rating">activity_main_image_view_rating</string>
+    <string name="activity_main_ad_title">Get the latest Google Maps app.</string>
+    <string name="activity_main_text_view_news_title">WHAT\'S NEW</string>
+    <string name="activity_main_text_view_news_text">* New Bloom ended a few hours earlier than intended, the event has now been extended to be active through Feb 12th. Fixed an issue that caused the New Bloom Nian Courier to drop at lower than expected rates. This has been corrected, and items have been granted to reflect the proper drop rate.</string>
+    <string name="activity_main_text_view_downloads_num">1</string>
+</resources>
