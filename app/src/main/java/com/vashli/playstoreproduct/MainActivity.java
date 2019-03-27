@@ -2,6 +2,8 @@ package com.vashli.playstoreproduct;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button openButton;
     private ImageView travelIcon;
     private ImageView similarIcon;
+    private RecyclerView starRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         travelIcon = findViewById(R.id.activity_main_image_view_travel);
         similarIcon = findViewById(R.id.activity_main_image_view_similars);
         addOnClickListeners();
+
+        starRecyclerView = findViewById(R.id.activity_main_recycler_view_stars);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        starRecyclerView.setLayoutManager(layoutManager);
+        starRecyclerView.setAdapter(new StarsAdapter());
     }
 
     private  void addOnClickListeners(){

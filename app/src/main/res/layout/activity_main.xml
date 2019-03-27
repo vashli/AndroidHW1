@@ -385,16 +385,7 @@ tools:context=".MainActivity">
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/activity_main_user_name" />
 
-            <ImageView
-                android:id="@+id/activity_main_icon_star_tst"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginTop="16dp"
-                android:contentDescription="@string/activity_main_icon_star_tst"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/activity_main_text_view_rate"
-                app:srcCompat="@drawable/icons8_star_500" />
+
 
             <TextView
                 android:id="@+id/activity_main_text_view_note"
@@ -405,7 +396,7 @@ tools:context=".MainActivity">
                 android:textStyle="italic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/activity_main_icon_star_tst" />
+                app:layout_constraintTop_toBottomOf="@+id/activity_main_recycler_view_stars" />
 
             <View
                 android:id="@+id/activity_main_line_3"
@@ -637,6 +628,16 @@ tools:context=".MainActivity">
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/activity_main_text_view_main_rating"
                 app:layout_constraintStart_toEndOf="@+id/activity_main_text_view_main_rating" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_main_recycler_view_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_main_text_view_rate" />
 
 
         </android.support.constraint.ConstraintLayout>

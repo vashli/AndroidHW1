@@ -44,4 +44,5 @@
     <string name="activity_main_icon_star_small_bottom_3">activity_main_icon_star_small_bottom_3</string>
     <string name="activity_main_icon_star_small_bottom_4">activity_main_icon_star_small_bottom_4</string>
     <string name="activity_main_icon_star_small_bottom_5">activity_main_icon_star_small_bottom_5</string>
+    <string name="cell_star_icon_star">cell_star_icon_star</string>
 </resources>
