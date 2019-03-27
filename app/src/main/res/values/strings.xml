@@ -4,7 +4,7 @@
     <string name="activity_main_text_travel">Travel and Local</string>
     <string name="activity_main_text_downloads">Downloads</string>
     <string name="activity_main_button_text_uninstall">Uninstall</string>
-    <string name="activity_main_text_rating">5,200</string>
+    <string name="activity_main_text_rating">5,234,200</string>
     <string name="activity_main_image_view_similars">activity_main_image_view_similars</string>
     <string name="activity_main_icon_app">activity_main_icon_app</string>
     <string name="activity_main_inc_name">Google Inc.</string>
@@ -34,4 +34,14 @@
     <string name="activity_main_text_view_news_title">WHAT\'S NEW</string>
     <string name="activity_main_text_view_news_text">* New Bloom ended a few hours earlier than intended, the event has now been extended to be active through Feb 12th. Fixed an issue that caused the New Bloom Nian Courier to drop at lower than expected rates. This has been corrected, and items have been granted to reflect the proper drop rate.</string>
     <string name="activity_main_text_view_downloads_num">1</string>
+    <string name="activity_main_icon_star_small_top_1">activity_main_icon_star_small_top_1</string>
+    <string name="activity_main_icon_star_small_top_2">activity_main_icon_star_small_top_2</string>
+    <string name="activity_main_icon_star_small_top_3">activity_main_icon_star_small_top_3</string>
+    <string name="activity_main_icon_star_small_top_4">activity_main_icon_star_small_top_4</string>
+    <string name="activity_main_icon_star_small_top_5">activity_main_icon_star_small_top_5</string>
+    <string name="activity_main_icon_star_small_bottom_1">activity_main_icon_star_small_bottom_1</string>
+    <string name="activity_main_icon_star_small_bottom_2">activity_main_icon_star_small_bottom_2</string>
+    <string name="activity_main_icon_star_small_bottom_3">activity_main_icon_star_small_bottom_3</string>
+    <string name="activity_main_icon_star_small_bottom_4">activity_main_icon_star_small_bottom_4</string>
+    <string name="activity_main_icon_star_small_bottom_5">activity_main_icon_star_small_bottom_5</string>
 </resources>
